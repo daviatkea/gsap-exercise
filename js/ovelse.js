@@ -1,9 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
 gsap.to(".ball-2", {
   x: 200,
-  scale: .3,
+  scale: 0.3,
   duration: 7,
   ease: "elastic.out(1, 0.3)",
   scrollTrigger: {
@@ -11,13 +10,12 @@ gsap.to(".ball-2", {
     //    markers: true,
     start: "center 65%",
     end: "bottom 45%",
-  }
+  },
 });
-
 
 gsap.from(".ball-3", {
   x: 300,
-  scale: .3,
+  scale: 0.3,
   rotation: 360,
   duration: 2,
   ease: "bounce.out",
@@ -27,12 +25,12 @@ gsap.from(".ball-3", {
     start: "center center",
     end: "center 25%",
     scrub: true,
-  }
+  },
 });
 
 gsap.from(".ball-4", {
   yPercent: 100,
-  stagger: .3,
+  stagger: 0.3,
   ease: "none",
   scrollTrigger: {
     trigger: ".ball-4",
@@ -40,7 +38,7 @@ gsap.from(".ball-4", {
     end: "top 20%",
     scrub: true,
     //        markers: true,
-  }
+  },
 });
 
 ScrollTrigger.create({
@@ -51,7 +49,6 @@ ScrollTrigger.create({
   once: true,
   markers: true,
 });
-
 
 //
 //gsap.to(".ball-2", {
