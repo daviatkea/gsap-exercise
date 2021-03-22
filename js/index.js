@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// BALL 2
 const tl = gsap.timeline({
   defaults: {
     duration: 2,
@@ -27,7 +28,9 @@ ScrollTrigger.create({
   markers: true,
   scrub: true,
 });
+// BALL 2 END
 
+// BALL 3
 gsap.from(".ball-3", {
   x: 300,
   scale: 0.3,
@@ -42,7 +45,9 @@ gsap.from(".ball-3", {
     scrub: true,
   },
 });
+// BALL 3 END
 
+// BALL 4
 gsap.from(".ball-4", {
   yPercent: 100,
   stagger: 0.3,
@@ -55,7 +60,9 @@ gsap.from(".ball-4", {
     // markers: true,
   },
 });
+// BALL 4 END
 
+// BALL 5
 ScrollTrigger.create({
   trigger: ".ball-5",
   start: "top center",
@@ -65,6 +72,7 @@ ScrollTrigger.create({
   once: true,
   // markers: true,
 });
+// BALL 5 END
 
 //
 // gsap.to(".ball-2", {
